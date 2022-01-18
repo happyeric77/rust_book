@@ -1,13 +1,3 @@
-/**
- * 1. Simple package has one lib crate 
- *      - mother module includes 1. care children module & 2. housekeeping module
- *      - father module includes 1. make money module 
- * 2. On the Crate level, there is a general level level function called "start_weekday_life" which makes call both mother module methods and father module methods
- *      - Absolute & relative path to call module function: Ref1 & Ref2
- *      - Make public access of module or module method using pub keyword
- * 3. Use keyword to avod repeating yourself by writing absolute path: Ref3
- */
-
 
 pub mod father {
     pub mod make_money {
