@@ -43,11 +43,11 @@ pub mod mother;
 use crate::mother::housekeeping;
 
 pub fn start_weekday_life() {
-    // Ref1: absolute path to call a module function
+    // Call using absolute path to call a module function
     crate::mother::housekeeping::wash_cloth();
-    // Ref2: relative path to call a module function
+    // Call using relative path to call a module function
     father::make_money::go_company();
 
-    // Ref3: Use keyword
+    // Call using Use keyword
     housekeeping::wash_cloth();
 }
