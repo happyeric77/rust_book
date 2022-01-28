@@ -6,3 +6,4 @@ For more detail see [my blog](https://colorfullife.ml/pages/diary/erics-daily-li
 * Chapter 7: [Packages, Crates, and Modules](https://colorfullife.ml/pages/diary/erics-daily-life/eric92/)
 * Chapter 8: [Common Collection](https://colorfullife.ml/pages/diary/erics-daily-life/eric94/)
 * Chapter 9: [Error Handling](https://colorfullife.ml/pages/diary/erics-daily-life/eric95/)
+* Chapter 10: [Generic, Trait and Lifetime](https://colorfullife.ml/pages/diary/erics-daily-life/eric96/)

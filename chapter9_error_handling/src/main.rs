@@ -38,13 +38,13 @@ fn main() {
                         Ok(_) => print!("File created\n"),
                         Err(e) => print!("Creating file failed: {}\n", e)
                     }
-                },
+                }
                 others => print!("Fetching file fails: {:#?}\n", others) 
             }
         }
         // 1.3
-        let f = &rs.unwrap_or_else(|err|{
-            print!("Fail to load the file: {}", err)
+        let f = &rs.unwrap_or_else(|_| {
+            panic!("Fail to unwrap")
         });
         // 1.4
         let ff = &rs.expect("Fail to open faile(using expect");
