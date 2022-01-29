@@ -41,20 +41,26 @@ fn main() {
                 }
                 others => print!("Fetching file fails: {:#?}\n", others) 
             }
-        }
-        // 1.3
-        let f = &rs.unwrap_or_else(|_| {
-            panic!("Fail to unwrap")
+        }        
+    }
+    // Ref1.3
+    {
+        let rs = File::open("./hello_colorfulLife_ref1.3");
+        let f = rs.unwrap_or_else(|e|{
+            panic!("ERR"); // --> Since unwrap_or_else expect a File type as an output. We either use panic to throw error during runtime or hanle error then output a File object
         });
-        // 1.4
-        let ff = &rs.expect("Fail to open faile(using expect");
+    }
+
+    {
+        let rs = File::open("./hello_colorfulLife_ref1.3");
+        let f = rs.expect("Error happened!");
     }
 
     // Ref2.1
     fn read_file_content_basic() -> Result<String, std::io::Error> {
         let rs = File::open("hello_colorfulLife_Ref2.1");
         // check if file fetched, if not return Error as function return.
-        let f = match rs {
+        let mut f = match rs {
             Ok(file) => file,
             Err(e) => return Err(e)
         };
@@ -75,7 +81,7 @@ fn main() {
         //      - if Yes: extract the value underneth
         //      - if No: reutrn Err(e) as fn return
         
-        let rs = File::open("hello_colorfulLife_Ref2.2")?;
+        let mut rs = File::open("hello_colorfulLife_Ref2.2")?;
         let mut s = String::new();
         use std::io::Read;
         rs.read_to_string(&mut s)?;
