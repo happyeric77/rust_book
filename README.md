@@ -9,3 +9,4 @@ For more detail see [my blog](https://colorfullife.ml/pages/diary/erics-daily-li
 * Chapter 10: [Generic, Trait and Lifetime](https://colorfullife.ml/pages/diary/erics-daily-life/eric96/)
 * Chapter 12: [Rust args parsing cli](https://colorfullife.ml/pages/diary/erics-daily-life/eric97/)
 * Chapter 13: [Iterator](https://colorfullife.ml/pages/diary/erics-daily-life/eric98/)
+* Chapter 15: [Smart pointer](https://colorfullife.ml/pages/diary/erics-daily-life/eric99/)
